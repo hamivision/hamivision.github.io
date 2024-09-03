@@ -3,30 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name's Portfolio</title>
+    <title>Hamed Taherzadeh - Personal Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        ul { list-style-type: none; }
-        li { margin: 5px 0; }
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eceff0;
+            color: #333333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1f4281; /* Primary blue */
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        header .display-4 {
+            font-size: 3rem;
+        }
+
+        header .lead {
+            font-size: 1.5rem;
+        }
+
+        /* Section Separator */
+        .section-separator {
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to right, #132335, #17afd1);
+            margin: 40px 0;
+        }
+
+        /* About Section */
+        #about {
+            margin: rem 0;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            color: #a7175a;
+        }
+
+        /* Contact Section */
+        #contact h2 {
+            font-size: 2.5rem;
+            color: #32455a;
+        }
+
+        #contact ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        #contact li {
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: #007bff;
+        }
+
+        /* Projects Section */
+        #projects .card {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Skills Section */
+        #skills h2 {
+            font-size: 2.5rem;
+            color: #007bff;
+        }
+
+        #skills ul {
+            padding-left: 0;
+        }
+
+        #skills li {
+            margin-bottom: 10px;
+        }
+
+        /* Resume Section */
+        #resume h2 {
+            font-size: 2.5rem;
+            color: #4b68c9;
+        }
+
+        #resume .btn {
+            font-size: 1.25rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40; /* Dark footer */
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+        }
     </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p>Welcome to my portfolio website!</p>
-    
-    <h2>Social Links</h2>
-    <ul>
-        <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
-        <li><a href="https://linkedin.com/in/hamed-thz-me/" target="_blank">LinkedIn</a></li>
-        <!-- Add more social links here -->
-    </ul>
-    
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://hamivision.github.io/vibrawise/" target="_blank">VibraWise</a></li>
-        <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2</a></li>
-        <!-- Add more project links here -->
-    </ul>
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Hamed Taherzadeh</h1>
+            <p class="lead">Mechanical Engineer | Mathematical Model Maker | Software Developer</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <section id="about" class="mb-5">
+            
+            <h2 class="display-4 text-primary">About Me</h2>
+            <p>Hello! I'm Hamed Taherzadeh, a versatile professional with expertise in mechanical engineering, mathematical modeling, and software development. I specialize in integrating complex systems, developing predictive models, and creating software solutions that drive innovation.</p>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <div class="section-separator"></div>
+            <h2 class="display-4 text-primary">Contact & Links</h2>
+            <ul class="list-styled">
+                <li><strong>Email:</strong> <a href="mailto:thz.hamed@gmail.com">thz.hamed@gmail.com</a></li>
+                <li><strong>Telegram:</strong> <a href="https://t.me/TaherzadehHamed">t.me/TaherzadehHamed</a></li>
+                <li><strong>YouTube:</strong> <a href="http://www.youtube.com/@ModelCoderChannel">@ModelCoderChannel</a></li>
+                <li><strong>GitHub:</strong> 
+                    <ul>
+                        <li><strong>GitHub Account 1:</strong> <a href="https://github.com/hamivision">hamivision</a>
+                            
+                        </li>
+                        <li><strong>GitHub Account 2:</strong> <a href="https://github.com/ModelCoderchannel">ModelCoderchannel</a>
+                            <ul>
+                                <li><a href="https://github.com/ModelCoderchannel/EulerProject">EulerProject</a></li>
+                                <li><a href="https://github.com/ModelCoderchannel/Key-Concepts-Exploration">Key-Concepts-Exploration</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/taherzadeh.hamed?igsh=aHlmeTFkamQxeXpk">Instagram Profile</a></li>
+            </ul>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <div class="section-separator"></div>
+            <h2 class="display-4 text-primary">Current Projects</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Project A</h5>
+                    <p class="card-text">Developing VibraWise, a software suite designed to address both nonlinear and linear vibration issues in thin plates and shells.</p>
+                    <li><a href="https://hamivision.github.io/vibrawise/">VibraWise</a></li>
+                </div>
+                <!--
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Project B</h5>
+                    <p class="card-text">Creating software tools to enhance engineering workflows. <em>Duration: July 2024 - December 2024</em></p>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <section id="skills" class="mb-5">
+            <div class="section-separator"></div>
+            <h2 class="display-4 text-primary">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Mechanical Engineering</h5>
+                    <ul>
+                        <li>Vibration Analysis</li>
+                        <li>Nonlinear Analysis</li>
+                        <li>Structural Analysis</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Mathematical Modeling</h5>
+                    <ul>
+                        <li>Predictive Analytics</li>
+                        <li>Simulation and Optimization</li>
+                        <li>Data Analysis</li>
+                        <li>Large Language Models (LLMs)</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Software Development</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Fortran</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="mb-5">
+            <div class="section-separator"></div>
+            <h2 class="display-4 text-primary">Tools & Software</h2>
+            <ul class="list-unstyled">
+                <li><strong>SolidWorks:</strong> </li>
+                <li><strong>ANSYS</strong> </li>
+                <li><strong>FreeCad</strong></li>
+                <li><strong>Maple</strong></li>
+                <li><strong>Matlab</strong></li>
+                <li><strong>Mathematica</strong></li>
+            </ul>
+        </section>
+
+        <section id="languages" class="mb-5">
+            <div class="section-separator"></div>
+            <h2 class="display-4 text-primary">Languages</h2>
+            <ul class="list-unstyled">
+                <li>English</li>
+                <li>Persian</li>
+                <li>Russian</li>
+                <li>Ukrainian</li>
+            </ul>
+        </section>
+
+        <section id="resume" class="text-center mb-5">
+            <div class="section-separator"></div>
+            <h2 class="display-4 text-primary">Download My Resume</h2>
+            <a href="https://github.com/hamivision/hamivision.github.io/blob/main/SoftwareDeveloperHamedThz.pdf" class="btn btn-primary btn-lg">Download Resume</a>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Hamed Taherzadeh</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
